@@ -64,14 +64,8 @@ set backupcopy=yes
 "= Highlighting
 "==============================================================================
 
-if &t_Co >= 256 || has("gui_running")
-    colorscheme desert
-    "set guifont=Consolas:h16:cANSI
-endif
-
-if &t_Co > 2 || has("gui_running")
-    syntax on
-endif
+colorscheme desert
+syntax on
 
 "==============================================================================
 "= Filetype specific
