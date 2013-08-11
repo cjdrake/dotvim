@@ -74,6 +74,7 @@ syntax on
 "==============================================================================
 
 if has("autocmd")
+    autocmd filetype go set noexpandtab
     autocmd filetype make set noexpandtab
     autocmd filetype python set expandtab
 endif " has ("autocmd")
