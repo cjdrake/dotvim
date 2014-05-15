@@ -85,3 +85,4 @@ endif " has ("autocmd")
 
 map <MiddleMouse> <Nop>
 map <F5> :NERDTree<cr>
+
