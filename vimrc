@@ -3,23 +3,20 @@
 " This must be first, because it changes other options
 set nocompatible
 
+call pathogen#infect()
+
 "==============================================================================
 " Editing behavior
 "==============================================================================
 
-call pathogen#infect()
-call pathogen#helptags()
-
-filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 set termencoding=utf-8
 set encoding=utf-8
 
 set guifont=Monospace\ 16
 
-" misc
+" Miscellaneous
 set nowrap
 set ww=<,>
 set backspace=indent,eol,start
@@ -35,20 +32,20 @@ set ruler       " Show the line and column number of the cursor position, separa
 set showmatch   " When a bracket is inserted, briefly jump to the matching one
 set scrolloff=4 " Minimal number of screen lines to keep above and below the cursor
 
-" indenting
+" Indentation
 set autoindent   " Copy indent from current line when starting a new line.
 set copyindent   " Copy the strucure of the existing lines indent when autoindenting a new line.
 set shiftwidth=4 " Number of spaces to use for each step of (auto)indent.
 set shiftround   " Round indent to multiple of 'shiftwidth'.
 set smarttab     " A <Tab> in front of a line inserts blanks according to 'shiftwidth'.
 
-" search
+" Search
 set hlsearch   " When there is a previous search pattern, highlight all its matches.
 set incsearch  " While typing a search command, show where the pattern, as it was typed so far, matches.
 set ignorecase " Ignore case in a search command.
 set smartcase  " Ignore case if search pattern is all lowercase.
 
-" invisible characters
+" Invisible characters
 if has("gui_running")
     set list
     set listchars=tab:»·,trail:·
@@ -74,7 +71,6 @@ syntax on
 "==============================================================================
 
 if has("autocmd")
-    autocmd filetype go set noexpandtab
     autocmd filetype make set noexpandtab
     autocmd filetype python set expandtab
 endif " has ("autocmd")
@@ -85,4 +81,3 @@ endif " has ("autocmd")
 
 map <MiddleMouse> <Nop>
 map <F5> :NERDTree<cr>
-
