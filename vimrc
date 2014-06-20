@@ -11,6 +11,8 @@ call pathogen#infect()
 
 filetype plugin indent on
 
+set autochdir
+
 set termencoding=utf-8
 set encoding=utf-8
 
