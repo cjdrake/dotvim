@@ -16,7 +16,7 @@ set autochdir
 set termencoding=utf-8
 set encoding=utf-8
 
-set guifont=Monospace\ 16
+set guifont=Monospace\ 14
 
 " Miscellaneous
 set nowrap
