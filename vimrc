@@ -24,7 +24,6 @@ set ww=<,>
 set backspace=indent,eol,start
 
 set tabstop=4
-set expandtab
 
 set number " Precede each line with its line number
 if has("gui_running")
@@ -67,15 +66,6 @@ set backupcopy=yes
 
 colorscheme desert
 syntax on
-
-"==============================================================================
-"= Filetype specific
-"==============================================================================
-
-if has("autocmd")
-    autocmd filetype make set noexpandtab
-    autocmd filetype python set expandtab
-endif " has ("autocmd")
 
 "==============================================================================
 "= GUI Settings
