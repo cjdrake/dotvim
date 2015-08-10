@@ -4,3 +4,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/rust-lang/rust.vim
