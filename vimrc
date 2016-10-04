@@ -39,6 +39,7 @@ set copyindent   " Copy the strucure of the existing lines indent when autoinden
 set shiftwidth=4 " Number of spaces to use for each step of (auto)indent.
 set shiftround   " Round indent to multiple of 'shiftwidth'.
 set smarttab     " A <Tab> in front of a line inserts blanks according to 'shiftwidth'.
+set expandtab    " The <Tab> key will insert spaces.
 
 " Search
 set hlsearch   " When there is a previous search pattern, highlight all its matches.
