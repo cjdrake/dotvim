@@ -4,8 +4,7 @@ Installation
 ::
 
    $ cd $HOME
-   $ git clone https://github.com/cjdrake/dotvim.git .vim
+   $ git clone --recursive https://github.com/cjdrake/dotvim .vim
    $ ln -s .vim/vimrc .vimrc
-   $ cd .vim
-   $ git submodule init
-   $ git submodule update
+
+See http://vimawesome.com for plugin descriptions.
